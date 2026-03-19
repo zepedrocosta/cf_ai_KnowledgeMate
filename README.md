@@ -1,14 +1,16 @@
-# cf_ai_ KnowledgeMate
+# cf*ai* KnowledgeMate
 
 An AI-powered knowledge assistant built on Cloudflare's platform. Chat with Llama 3.3 70B through a real-time WebSocket interface, with full conversation memory powered by Durable Objects.
 
+![homepage](media/image.png)
+
 ## Architecture
 
-| Component | Technology |
-|-----------|------------|
-| **LLM** | Llama 3.3 70B (Workers AI) |
-| **Coordination** | Durable Objects via Agents SDK |
-| **User Input** | WebSocket-based chat UI |
+| Component        | Technology                                                     |
+| ---------------- | -------------------------------------------------------------- |
+| **LLM**          | Llama 3.3 70B (Workers AI)                                     |
+| **Coordination** | Durable Objects via Agents SDK                                 |
+| **User Input**   | WebSocket-based chat UI                                        |
 | **State/Memory** | Durable Object state (conversation history persisted per user) |
 
 ### How It Works
@@ -23,7 +25,7 @@ An AI-powered knowledge assistant built on Cloudflare's platform. Chat with Llam
 
 ### Data Flow
 
-```
+```txt
 Browser ──WebSocket──> Worker ──route──> KnowledgeAgent (Durable Object)
                                               │
                                               ├─ Loads conversation history from state
@@ -69,7 +71,7 @@ This deploys the Worker + Durable Object + static assets to your Cloudflare acco
 
 ## Project Structure
 
-```
+```txt
 cf_ai_/
 ├── src/
 │   └── server.ts          # Worker entry point + KnowledgeAgent Durable Object
