@@ -1,0 +1,26 @@
+{
+  "name": "cf-ai-knowledge-assistant",
+  "main": "src/server.ts",
+  "compatibility_date": "2025-03-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "ai": {
+    "binding": "AI"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "KnowledgeAgent",
+        "class_name": "KnowledgeAgent"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["KnowledgeAgent"]
+    }
+  ],
+  "assets": {
+    "directory": "./public"
+  }
+}
