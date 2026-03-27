@@ -82,8 +82,7 @@ cf_ai_/
 ├── tsconfig.json          # TypeScript configuration
 ├── package.json           # Dependencies and scripts
 ├── README.md              # This file
-├── PROMPTS.md             # AI prompts used during development
-└── JOSEC_OVERVIEW.md      # Personal overview of what was built
+└── PROMPTS.md             # AI prompts used during development
 ```
 
 ## Features
