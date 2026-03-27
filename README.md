@@ -102,3 +102,7 @@ cf_ai_/
 - **Cloudflare Durable Objects** — Stateful coordination with the Agents SDK
 - **Agents SDK** (`agents` npm package) — Framework for building stateful AI agents on Cloudflare
 - **Vanilla HTML/CSS/JS** — Simple frontend with no build step
+
+## Disclaimer
+
+This project was 100% *vibe coded* with Claude Code in order to apply for a Cloudflare summer intership in Lisbon.
